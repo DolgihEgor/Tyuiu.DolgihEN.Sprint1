@@ -37,11 +37,12 @@ namespace Tyuiu.DolgihEN.Sprint1.Task2.V25
             Console.WriteLine("Введите значение X:");
             x = Convert.ToInt32(Console.ReadLine());
 
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("*Результат:                                                               *");
             Console.WriteLine("***************************************************************************");
-
-            Console.WriteLine(ds.ConvertRadsToDegrees(x));
+            Console.WriteLine(string.Format("{0:F3}", ds.ConvertRadsToDegrees(x)));
+            //Console.WriteLine(ds.ConvertRadsToDegrees(x));
             Console.ReadLine();
         }
     }
